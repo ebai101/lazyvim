@@ -32,19 +32,6 @@ return {
             },
           },
         },
-        basedpyright = {
-          settings = {
-            basedpyright = {
-              disableOrganizeImports = true,
-            },
-            python = {
-              analysis = {
-                ignore = { '*' },
-                typeCheckingMode = 'off',
-              },
-            },
-          },
-        },
       },
     },
   },
@@ -53,7 +40,7 @@ return {
     opts = {
       ensure_installed = {
         'lua-language-server',
-        'basedpyright',
+        'ty',
         'ruff',
       },
     },
