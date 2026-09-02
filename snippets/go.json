@@ -1,0 +1,11 @@
+{
+  "Error check": {
+    "prefix": "iferr",
+    "body": [
+      "if err != nil {",
+      "\treturn ${1:err}",
+      "}"
+    ],
+    "description": "Return after checking an error"
+  }
+}
