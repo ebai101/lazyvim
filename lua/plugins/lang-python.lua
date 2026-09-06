@@ -6,6 +6,17 @@ return {
         'ty',
         'ruff',
       },
+      servers = {
+        ty = {
+          settings = {
+            ty = {
+              completions = {
+                autoImport = true,
+              },
+            },
+          },
+        },
+      },
     },
   },
   {
