@@ -1,11 +1,7 @@
 {
-  "Error check": {
+  "if err != nil": {
     "prefix": "iferr",
-    "body": [
-      "if err != nil {",
-      "\treturn ${1:err}",
-      "}"
-    ],
-    "description": "Return after checking an error"
+    "body": "if err != nil {\n\treturn ${1:nil}, ${2:err}\n}",
+    "description": "Snippet for if err != nil"
   }
 }
