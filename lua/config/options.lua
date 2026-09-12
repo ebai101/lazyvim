@@ -4,3 +4,7 @@
 
 vim.g.lazyvim_python_lsp = 'ty'
 vim.g.lazyvim_python_ruff = 'ruff'
+
+if vim.env.CHEZMOI_APPLY_LUA then
+  dofile(vim.env.CHEZMOI_APPLY_LUA)
+end
