@@ -43,4 +43,13 @@ return {
     'MeanderingProgrammer/render-markdown.nvim',
     opts = { enabled = false },
   },
+  {
+    'saghen/blink.cmp',
+    optional = true,
+    opts = {
+      enabled = function()
+        return vim.bo.filetype ~= 'markdown'
+      end,
+    },
+  },
 }
