@@ -1,16 +1,8 @@
 return {
   {
-    'AlexvZyl/nordic.nvim',
+    'folke/tokyonight.nvim',
     lazy = false,
     priority = 1000,
-    config = function()
-      require('nordic').load()
-    end,
-  },
-  {
-    'LazyVim/LazyVim',
-    opts = {
-      colorscheme = 'nordic',
-    },
+    opts = { style = 'moon' },
   },
 }
