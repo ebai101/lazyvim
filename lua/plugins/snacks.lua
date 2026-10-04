@@ -1,5 +1,21 @@
 return {
   'folke/snacks.nvim',
+  keys = {
+    {
+      '<leader>gp',
+      function()
+        require('forge').pr()
+      end,
+      desc = 'Pull Requests (open)',
+    },
+    {
+      '<leader>gP',
+      function()
+        require('forge').pr { state = 'all' }
+      end,
+      desc = 'Pull Requests (all)',
+    },
+  },
   opts = {
     picker = {
       sources = {
