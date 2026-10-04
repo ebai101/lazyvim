@@ -32,6 +32,9 @@ return {
         args = { '--mode', 'sentence', '--max-width', '0' },
         stdin = true,
         cwd = require('conform.util').root_file { '.git' },
+        condition = function()
+          return require('neoconf').get('lazyvim.markdown.mdreflow', true) ~= false
+        end,
       }
       opts.formatters_by_ft = opts.formatters_by_ft or {}
       for _, filetype in ipairs { 'markdown', 'markdown.mdx' } do
