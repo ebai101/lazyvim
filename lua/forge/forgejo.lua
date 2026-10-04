@@ -60,7 +60,7 @@ local function run_action(name, item)
   if action.ft then
     local buf = vim.api.nvim_create_buf(false, true)
     vim.api.nvim_buf_set_option(buf, 'buftype', 'nofile')
-    vim.api.nvim_buf_set_option(buf, 'bufhidden', 'wipe')
+    vim.api.nvim_buf_set_option(buf, 'bufhidden', 'hide')
     vim.api.nvim_buf_set_option(buf, 'filetype', action.ft)
     vim.api.nvim_buf_set_lines(buf, 0, -1, false, vim.split(output, '\n', { plain = true }))
     vim.api.nvim_buf_set_keymap(buf, 'n', 'q', '<cmd>bd<cr>', { noremap = true, silent = true })
